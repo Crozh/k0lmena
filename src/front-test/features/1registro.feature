@@ -1,5 +1,3 @@
-# Registro 2
-
 @Registro @All
 Feature: Registro lambdatest
 Scenario Outline: Registro completo 
@@ -13,13 +11,14 @@ Scenario Outline: Registro completo
     Then el usuario deberia ver un mensaje de registro exitoso
     And el usuaria clickea en el logout
 
+# La página que elegí no tiene una forma de borrar las cuentas así que no pude hacer que sea reutilizable los mails que puse, aunque era mi intención 
+
     Examples:
       | nombre    | apellido  | mail           | telefono   | contraseña | contraseña2  |
-      | penne      | rigatti    | azu3v23@gmail.com | 1168687848 | pepe123    | pepe123   |
-      | penelope | patty | pxix6ec332@gmail.com | 1166668888 | pipo123 | pipo123 |
+      | pan     |   tostado  | pipa2232@gmail.com | 1168687848 | pepe123    | pepe123   |
+      | fernet | coca | pupi332@gmail.com | 1166668888 | pipo123 | pipo123 |
 
 
-# Registro 2
 
 @Registro @All
 
