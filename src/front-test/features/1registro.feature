@@ -15,8 +15,8 @@ Scenario Outline: Registro completo
 
     Examples:
       | nombre    | apellido   | mail             | telefono   | contraseña | contraseña2  |
-      | pan       |   tostado  | paxxn7myb@gmail.com | 1168687848 | pepe123    | pepe123      |
-      | fernet    | coca       | mxxtx4v@gmail.com | 1166668888 | pipo123    | pipo123      |
+      | pan       |   tostado  | paxnnxn7myb@gmail.com | 1168687848 | pepe123    | pepe123      |
+      | fernet    | coca       | mxxtetx4v@gmail.com | 1166668888 | pipo123    | pipo123      |
 
 
 
