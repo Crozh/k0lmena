@@ -15,8 +15,8 @@ Scenario Outline: Verificar el funcionamiento del Registro
 
     Examples:
       | nombre    | apellido  | mail           | telefono   | contraseña | contraseña2  |
-      | penne      | rigatti    | auw23@gmail.com | 1168687848 | pepe123    | pepe123   |
-      | penelope | patty | piie332@gmail.com | 1166668888 | pipo123 | pipo123 |
+      | penne      | rigatti    | azuzzwv23@gmail.com | 1168687848 | pepe123    | pepe123   |
+      | penelope | patty | piwwxxxec332@gmail.com | 1166668888 | pipo123 | pipo123 |
 
 
 # Registro 2
@@ -36,11 +36,9 @@ Scenario Outline: Verificar los campos incorrectos del Registro
     And el usuario deberia ver el mensaje de: 'E-Mail Address does not appear to be valid!'
     And el usuario deberia ver el mensaje de: 'Telephone must be between 3 and 32 characters!'
     And el usuario deberia ver el mensaje de: 'Password must be between 4 and 20 characters!'
-    # And el usuario deberia ver el mensaje de 'You must agree to the Privacy Policy!'
 
 
     Examples:
       | nombre    | apellido  | mail           | telefono   | contraseña | contraseña2  |          
       |           |           |                |            |            |              |
-  #   | jijixd    |   mariano        |      jerejejuje@gmail.com          |     1234r      |      1234r     |              | 
                        
