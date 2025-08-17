@@ -69,8 +69,10 @@ When("el usuario clickea en el checkbox de 'Privacy Policy'", async function () 
 });
 
 
+
 When("el usuario clickea en el boton de 'Continue'", async function () {
   for (const page of pages) {
+    
     await page.getByRole("button", {name: cont}).click();
     } 
 });

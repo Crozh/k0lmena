@@ -14,9 +14,9 @@ import {
 import { url } from 'inspector';
 import { DataTable } from '@wdio/cucumber-framework';
 import { data } from 'cheerio/dist/commonjs/api/attributes';
-import { buttonSave, buyBtn, inputAgree, paymentAdress, paymentCity, paymentCountry, paymentFirstName, paymentLastName, paymentZone, producto, mainPage } from '../locators/carrito.locator';
+import { buttonSave, buyBtn, inputAgree, paymentAdress, paymentCity, paymentCountry, paymentFirstName, paymentLastName, paymentZone, producto, mainPage, radioAdress, buttonConf, orderCompl, newAddress } from '../locators/carrito.locator';
 
-Given("el usuario esta logueado a lambdatest", async () => {
+Given("el usuario esta logueado en la pagina principal en lambdatest", async () => {
   for (const page of pages) {
     console.log(`Ejecutando prueba en navegador: ${page.context().browser()?.browserType().name()}`);
     await page.getByRole("link", {name: mainPage}).click();
@@ -32,7 +32,7 @@ When("el usuario ingresa a la pagina del producto", async function () {
 When("el usuario clickea en el boton 'Buy Now'", async function () {
   for (const page of pages) {
       await page.getByRole('button', { name: buyBtn}).click();
-    
+      await page.locator('#payment-address').getByText(newAddress).click();
     } 
 });
 
@@ -54,22 +54,28 @@ When("el usuario clickeo en el checkbox 'Terms & Conditions'", async function ()
     } 
 });
 
+
+
 When("el usuario clickeo en el boton 'Continue'", async function () {
   for (const page of pages) {
-     await page.locator(buttonSave).click();
+  await page.waitForTimeout(500); 
+  await page.locator(buttonSave).dblclick();
   }
 });
 
 
 Then("el usuario clickea en el boton 'Confirm Order'", async function () {
   for (const page of pages) {
-    
+    await page.waitForTimeout(500); 
+    await page.locator(buttonConf).dblclick();
   }
 });
 
 
 Then("el usuario deberia ver un mensaje de orden exitosa", async function () {
   for (const page of pages) {
-    
+    await page.getByText(orderCompl).selectText();
   }
 });
+
+

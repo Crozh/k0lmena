@@ -7,10 +7,12 @@ const { chromium } = require('playwright');
   const context = await browser.newContext();
   const page = await context.newPage();
   await page.goto('https://ecommerce-playground.lambdatest.io/index.php?route=common/home');
-  await page.locator('#mz-product-listing-image-37218329-0-3').click();
-  await page.getByRole('button', { name: 'Buy now' }).click();
-  await page.getByText('Guest Checkout').click();
-  await page.getByText('I have read and agree to the Terms & Conditions').click();
+  await page.getByRole('button', { name: '0' }).click();
+  await page.locator('.mz-pure-overlay').click();
+  await page.locator('#swiper-wrapper-3238c78de0910d173').getByLabel('4 /').getByRole('button', { name: '' }).click();
+  await page.getByRole('link', { name: 'Checkout ' }).click();
+  await page.getByRole('button', { name: 'Continue ' }).click();
+  await page.getByText('Warning: You must agree to').click();
   await page.close();
 
   // ---------------------

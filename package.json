@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "npx cucumber-js --profile front --tags @Smoke --retry 1",
+    "test": "npx cucumber-js --profile front --tags @All --retry 1",
+    "registro": "npx cucumber-js --profile front --tags @Registro --retry 1",
+    "login": "npx cucumber-js --profile front --tags @Login --retry 1",
+    "carrito": "npx cucumber-js --profile front --tags @Carrito --retry 1",
     "allTests": "npx cucumber-js test",
     "report": "npx ts-node src/reports/front/report-generator.js",
     "report-default": "node generate-report.ts",

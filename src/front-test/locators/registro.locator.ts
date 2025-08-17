@@ -16,4 +16,4 @@ export const lastNameBlank = 'Last Name must be between 1 and 32 characters!'
 export const mailBlank = 'E-Mail Address does not appear to be valid!'
 export const telephoneBlank = 'Telephone must be between 3 and 32 characters!'
 export const passwordBlank = 'Password must be between 4 and 20 characters!'
-export const privPolicy = "Warning: You must agree to the Privacy Policy!"
+export const privPolicy = "Warning: You must agree to"

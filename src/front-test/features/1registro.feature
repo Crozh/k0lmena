@@ -14,9 +14,9 @@ Scenario Outline: Registro completo
 # La página que elegí no tiene una forma de borrar las cuentas así que no pude hacer que sea reutilizable los mails que puse, aunque era mi intención 
 
     Examples:
-      | nombre    | apellido  | mail           | telefono   | contraseña | contraseña2  |
-      | pan     |   tostado  | pipa2232@gmail.com | 1168687848 | pepe123    | pepe123   |
-      | fernet | coca | pupi332@gmail.com | 1166668888 | pipo123 | pipo123 |
+      | nombre    | apellido   | mail             | telefono   | contraseña | contraseña2  |
+      | pan       |   tostado  | paxxn7myb@gmail.com | 1168687848 | pepe123    | pepe123      |
+      | fernet    | coca       | mxxtx4v@gmail.com | 1166668888 | pipo123    | pipo123      |
 
 
 

@@ -77,6 +77,7 @@ When("el usuario clickea en el checkbox 'Privacy Policy'", async function () {
 
 When("el usuario clickea en el boton 'Continue'", async function () {
   for (const page of pages) {
+    await page.waitForTimeout(2000);
     await page.getByRole("button", {name: cont}).click();
     
     } 
