@@ -1,0 +1,11 @@
+export const mainPage = "Poco Electro"
+export const producto = '#mz-product-listing-image-37218329-0-3'
+export const buyBtn = "Buy Now"
+export const paymentFirstName = "#input-payment-firstname"
+export const paymentLastName = "#input-payment-lastname"
+export const paymentAdress = "#input-payment-address-1"
+export const paymentCity = "#input-payment-city"
+export const paymentCountry = "#input-payment-country"
+export const paymentZone = "#input-payment-zone" 
+export const inputAgree = "I have read and agree to the Terms & Conditions"
+export const buttonSave = "#button-save"

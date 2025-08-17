@@ -1,0 +1,19 @@
+export const registro = "Register"
+export const firstName = "#input-firstname" 
+export const lastName = "#input-lastname"
+export const email = "#input-email"
+export const telephone = "#input-telephone"
+export const password = "#input-password"
+export const confPassword = "#input-confirm"
+export const privacy = "I have read and agree to the"
+export const cont = "Continue"
+export const myAccount = "My Account"
+export const success =  "Continue"
+export const logout = "Logout"
+
+export const firstNameBlank = 'First Name must be between 1 and 32 characters!'
+export const lastNameBlank = 'Last Name must be between 1 and 32 characters!'
+export const mailBlank = 'E-Mail Address does not appear to be valid!'
+export const telephoneBlank = 'Telephone must be between 3 and 32 characters!'
+export const passwordBlank = 'Password must be between 4 and 20 characters!'
+export const privPolicy = "Warning: You must agree to the Privacy Policy!"

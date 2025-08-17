@@ -1,0 +1,8 @@
+export const myAccount = "My Account"
+export const login = "Login"
+export const mail = "#input-email"
+export const password = "#input-password"
+export const loginBtn = "Login"
+export const header = "My Account"
+export const accMail = "piie332@gmail.com"
+export const accPass = "pepe123"
