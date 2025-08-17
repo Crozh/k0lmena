@@ -2,7 +2,7 @@
 
 @Registro @All
 Feature: Registro lambdatest
-Scenario Outline: Verificar el funcionamiento del Registro
+Scenario Outline: Registro completo 
     Given el usuario esta en la pagina de lambdatest
     When el usuario clickea en el boton de 'Register'
     And el usuario ingresa los datos validos: 
@@ -15,15 +15,15 @@ Scenario Outline: Verificar el funcionamiento del Registro
 
     Examples:
       | nombre    | apellido  | mail           | telefono   | contraseña | contraseña2  |
-      | penne      | rigatti    | azuzzwv23@gmail.com | 1168687848 | pepe123    | pepe123   |
-      | penelope | patty | piwwxxxec332@gmail.com | 1166668888 | pipo123 | pipo123 |
+      | penne      | rigatti    | azu3v23@gmail.com | 1168687848 | pepe123    | pepe123   |
+      | penelope | patty | pxix6ec332@gmail.com | 1166668888 | pipo123 | pipo123 |
 
 
 # Registro 2
 
 @Registro @All
 
-Scenario Outline: Verificar los campos incorrectos del Registro
+Scenario Outline: Registro con campos vacios 
     Given el usuario esta en la pagina lambdatest
     When el usuario clickea el boton de 'Register'
     And el usuario ingresa los datos invalidos: 
