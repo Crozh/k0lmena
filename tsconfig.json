@@ -12,5 +12,5 @@
     "baseUrl": ".",
     "types": ["node"]
   },
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "src/front-test/steps/1page.steps.ts"]
 }
